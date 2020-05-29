@@ -9,6 +9,8 @@ app.set('view engine', 'handlebars');
 
 var port = process.env.PORT || 3000;
 
+console.log(fs.readFileSync('logs.json', 'utf8'));
+
 var logObjects = JSON.parse(fs.readFileSync('logs.json', 'utf8'));
 
 app.use(express.static('public'));
@@ -21,6 +23,13 @@ app.get('/logs', function (req, res) {
   res.render('logsPage', {
     logs: logObjects
   });
+});
+
+app.post('/add', function (req, res) {
+  logObjects.push(req.params.entry);
+  console.log("received!");
+  console.log(req);
+  res.redirect('/logs');
 });
 
 app.get('/create', function (req, res) {

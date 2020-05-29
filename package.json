@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo NO-TEST",
-    "build": "handlebars views/index.handlebars -f public/indexTemplate.js && handlebars views/401.handlebars -f public/401Template.js && handlebars views/404.handlebars -f public/404Template.js && handlebars views/partials/name.handlebars -f public/nameTemplate.js && handlebars views/logsPage.handlebars -f public/logsPageTemplate.js && handlebars views/createPage.handlebars -f public/createPageTemplate.js && handlebars views/partials/defaultCreate.handlebars -f public/defaultCreateTemplate.js",
+    "build": "handlebars views/index.handlebars -f public/indexTemplate.js && handlebars views/401.handlebars -f public/401Template.js && handlebars views/404.handlebars -f public/404Template.js && handlebars views/partials/name.handlebars -f public/nameTemplate.js && handlebars views/logsPage.handlebars -f public/logsPageTemplate.js && handlebars views/createPage.handlebars -f public/createPageTemplate.js && handlebars views/partials/defaultCreate.handlebars -f public/defaultCreateTemplate.js && handlebars views/partials/default.handlebars -f public/defaultTemplate.js",
     "prestart": "npm run build",
     "start": "node server.js"
   },
