@@ -1,0 +1,28 @@
+{
+  "name": "final-project-team-34",
+  "version": "1.0.0",
+  "description": "Final project for team 34.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo NO-TEST",
+    "build": "handlebars views/index.handlebars -f public/indexTemplate.js && handlebars views/401.handlebars -f public/401Template.js && handlebars views/404.handlebars -f public/404Template.js && handlebars views/partials/name.handlebars -f public/nameTemplate.js && handlebars views/logsPage.handlebars -f public/logsPageTemplate.js && handlebars views/createPage.handlebars -f public/createPageTemplate.js && handlebars views/partials/defaultCreate.handlebars -f public/defaultCreateTemplate.js",
+    "prestart": "npm run build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-sp20/final-project-team-34.git"
+  },
+  "author": "mdeane84",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-sp20/final-project-team-34/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-sp20/final-project-team-34#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
+    "mongodb": "^3.5.8"
+  }
+}

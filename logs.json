@@ -1,0 +1,32 @@
+[
+  {
+    "logNumber": 1,
+    "handler": "Mark",
+    "dog": "pupper",
+    "date": "May 31, 2020",
+    "phase": "Morning",
+    "duration": "25 minutes",
+    "weather": "clear",
+    "wind": "Light, North",
+    "problem": "Air Scent",
+    "trail": "15 minutes",
+    "environment": "Heavily wooded with thick underbrush. Wet soil and foliage.",
+    "performance": "Quick find and successful refind. Did not alert.",
+    "goals": "Improve alerts."
+  },
+  {
+    "logNumber": 2,
+    "handler": "Mark",
+    "dog": "pupper",
+    "date": "June 1, 2020",
+    "phase": "Evening",
+    "duration": "20 minutes",
+    "weather": "clear",
+    "wind": "Light, North",
+    "problem": "Air Scent",
+    "trail": "15 minutes",
+    "environment": "Heavily wooded with thick underbrush. Wet soil and foliage.",
+    "performance": "Quick find and successful refind. Did not alert.",
+    "goals": "Improve alerts."
+  }
+]
