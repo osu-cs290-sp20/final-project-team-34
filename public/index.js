@@ -15,11 +15,13 @@ function addToDB(logObject) {
   str = JSON.stringify(logObject)
   console.log(str);
 
-  const response = fetch('/add', {
+  var options = {
     method: 'POST',
-    headers: {'Content-Type':'application/json'},
-    body: str
-  });
+    headers: {'content-type': 'application/json'},
+    data: str,
+    url: '/api/logs/add'
+  };
+  axios(options);
 }
 
 function getLogJSON(fields) {

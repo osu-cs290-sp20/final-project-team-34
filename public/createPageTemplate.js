@@ -8,7 +8,7 @@ templates['createPage'] = template({"compiler":[8,">= 4.3.0"],"main":function(co
         return undefined
     };
 
-  return "<h1>BrownDog Toolkit</h1>\r\n<hr>\r\n"
+  return "<h1>Title</h1>\r\n<hr>\r\n"
     + ((stack1 = container.invokePartial(lookupProperty(partials,"defaultCreate"),depth0,{"name":"defaultCreate","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
 })();
