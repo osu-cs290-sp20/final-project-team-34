@@ -19,6 +19,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/logs', function (req, res) {
+  console.log("rendering logs");
   res.render('logsPage', {
     logs: logObjects
   });
@@ -36,11 +37,11 @@ app.post('/api/logs/add', function (req, res) {
     console.log("Post Successful!");
   })
   */
-
-  res.redirect('/');
+  res.send("Log Successful!");
 });
 
 app.get('/create', function (req, res) {
+  res.header('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
   res.render('createPage', {
     logNumber: logObjects.length+1
   });

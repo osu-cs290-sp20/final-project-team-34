@@ -1,3 +1,4 @@
+var logContainer = document.getElementById("log-container");
 var logNumber = document.getElementById("log-number");
 var fields = document.getElementsByClassName("log-field");
 var submit = document.getElementById("btn-submit");
@@ -21,7 +22,10 @@ function addToDB(logObject) {
     data: str,
     url: '/api/logs/add'
   };
-  axios(options);
+  axios(options)
+    .then( (res) => {
+      window.location.href="/logs";
+    });
 }
 
 function getLogJSON(fields) {
