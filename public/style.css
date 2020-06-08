@@ -6,20 +6,44 @@ body
     background-color: #f0f0f0;
     
 }
-.log-container
+.site-title
 {
-    position: absolute;
-    top: 25%;
-    left: 20%;
-    width: 50%;
-    height: 50%;
-    margin: 25px;
-    padding-left: 20px;
-    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+.logo-image
+{
+    margin: 10px;
+    padding: 20px 10px;
+    background: #f0f0f0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    border-radius: 25px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+    15px 15px 15px  rgba(0,0,0,0.05);
+}
+.logo
+{
+    margin: 0px 10px 10px;
+}
+ .logo-text span
+{
+margin-left: 5px;
+color: #000;
+font-size: 18px;
+}
+.logs-title{
+    /* padding-top: 10px; */
+    text-align: center;
+}
+.log-form-container
+{
+    margin: 25px 20%;
+    /* padding-left: 20px; */
+    border-radius: 25px;
+    display: flex;
     background: #f0f0f0;
 
     /*This is the first shadowing tecnique */
@@ -34,6 +58,19 @@ body
 
 
 } 
+.log-form-box
+{
+    margin: 0px 30px 20px; 
+}
+.log-form 
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
 .log-field
 {
     display:flex;
@@ -48,7 +85,7 @@ div .log-field
 }
 .display-log-container
 {
-    margin: 50px;
+    margin: 20px 10%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -57,7 +94,7 @@ div .log-field
 {
     flex: 0 1 28%;
     display: flex;
-    margin: 50px 2px 2px;
+    margin: 20px 10px 2px;
     padding: 20px;
     border-radius: 25px;
     background: #f0f0f0;
@@ -80,13 +117,8 @@ div .log-field
 }
 ul
 {
-    position: absolute;
-    top: 10%;
-    left: 75%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 20px 0;
-
+    margin: 10px;
+    padding: 20px 0 20px;
     background: #f0f0f0;
     display: flex;
     border-radius: 25px;
@@ -106,6 +138,7 @@ ul
 }
 ul li
 {
+    
     list-style: none;
     text-align: center;
     display: block;
@@ -119,13 +152,13 @@ ul li:last-child
 ul li a 
 {
     text-decoration: none;
-    padding: 0 50px;
+    padding: 0px 40px;
     display: block;
 }
 ul li a .icon
 {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     overflow: hidden; 
     margin: 0 auto 10px;
@@ -134,8 +167,8 @@ ul li a .icon .fas
 {
     width: 100%;
     height: 100%;
-    line-height: 40px;
-    font-size: 34px;
+    line-height: 50px;
+    font-size: 40px;
     transition: 0.5s;
     color: #000;
 
@@ -180,4 +213,12 @@ ul li a .name span:before
 ul li a:hover .name span
 {
     transform: translateY(20px);
+}
+
+.log-submit
+{
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 42.5%;
 }
