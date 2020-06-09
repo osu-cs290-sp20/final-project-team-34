@@ -42,7 +42,15 @@ font-size: 14px;
 }
 .log-form-container
 {
-    margin: 25px 20%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+
+
+
+} 
+.log-form-box
+{   margin: 25px 20%;
     /* padding-left: 20px; */
     border-radius: 25px;
     display: flex;
@@ -57,20 +65,44 @@ font-size: 14px;
                 inset 4px 4px 5px rgba(255,255,255,0.8),
                 inset -4px -4px 5px rgba(0,0,0,0.05),
                 0 50px 40px rgba(0,0,0,0.05);
-
-
-} 
-.log-form-box
-{
-    margin: 0px 30px 20px; 
+     
 }
 .log-form 
 {
+    margin: 0px 30px 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
 
+}
+.column-button
+{
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-column-textarea
+{
+    padding: 0 10px;
+    margin: 30px 0 10px;
+}
+.form-row
+{
+    padding: 0 10px;
+    margin: 30px 0 10px;
+}
+.form-column
+{
+    padding: 0 10px;
+    margin: 30px 0 10px;
+}
+.log-form h1 
+{
+    width:100%;
+    text-align: center;
 }
 
 .log-field
@@ -217,10 +249,145 @@ ul li a:hover .name span
     transform: translateY(20px);
 }
 
-.log-submit
+
+
+
+
+
+
+
+/* Small screens */
+@media (max-width: 500px) {
+    .site-title {
+    /* On small screens, we are no longer using row direction but column */
+    display: flex;
+    flex-direction: column;
+        
+    }
+    .logo-image
+    {   text-align: center;
+        margin: 10px;
+        background: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+        15px 15px 15px  rgba(0,0,0,0.05);
+    }
+    .logo
+    {
+        align-self: center;
+        margin: 5px 15px;
+    
+    }
+    .logo-text span 
+    {
+        margin: 0 15px;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
+    }
+    ul
 {
-    margin: 0;
-    position: absolute;
-    top: 90%;
-    left: 42.5%;
+    margin: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+
+    /* The box shadow below is the same as the one on the log box container*/
+    /*-boxs hadow: -15px -15px 15px rgba(255,255,255,0.5),
+                15px 15px 15px  rgba(0,0,0,0),
+                inset 4px 4px 5px rgba(255,255,255,0.8),
+                inset -4px -4px 5px rgba(0,0,0,0.05),
+                0 50px 40px rgba(0,0,0,0.05); */
+
+    /*This is another shadowing tecniqe we can see if we want */
+    /* box-shadow: 0 10px 30px rgba(0,0,0,.3);*/
+
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+                15px 15px 15px  rgba(0,0,0,0.05);
 }
+ul li
+{
+    
+    list-style: none;
+    /* text-align: center; */
+    display: block;
+    border-right: 1px solid rgba(0,0,0,.2);
+
+}
+ul li:last-child
+{
+    border-right: none;
+}
+ul li a 
+{
+    text-decoration: none;
+    padding: 0px 20px;
+    display: block;
+}
+ul li a .icon
+{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    overflow: hidden; 
+    margin: 0 auto 10px;
+}
+ul li a .icon .fas
+{
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    font-size: 27px;
+    transition: 0.5s;
+    color: #000;
+
+}
+ul li a .icon .fas:last-child
+{
+    color: #c23903;
+    
+}
+ul li a:hover .icon .fas
+{
+    transform: translateY(-100%);
+}
+ul li a .name 
+{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+ul li a .name span
+{
+display: block;
+position: relative;
+color: #000;
+font-size: 14px;
+line-height: 20px;
+transition: 0.5s;
+
+}
+ul li a .name span:before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0; 
+    width: 100%;
+    height:100%;
+    color: #c23903;
+}
+ul li a:hover .name span
+{
+    transform: translateY(20px);
+}
+    
+}
+
+/*-------------------------------------------end of small at media--------------------------------------------------------------*/
