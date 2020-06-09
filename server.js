@@ -18,12 +18,21 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/contact', function (req, res) {
+  res.render('contactuspage');
+});
+
+app.get('/team', function (req, res) {
+  res.render('teampage');
+});
+
 app.get('/logs', function (req, res) {
   console.log("rendering logs");
   res.render('logsPage', {
     logs: logObjects
   });
 });
+
 
 app.post('/api/logs/add', function (req, res) {
   var obj = req.body;
@@ -53,4 +62,4 @@ app.get('*', function (req, res) {
 
 app.listen(port, function () {
   console.log("== Server is listening on port", port);
-});
+}); 
