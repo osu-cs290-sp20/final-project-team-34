@@ -8,8 +8,8 @@ templates['createPage'] = template({"compiler":[8,">= 4.3.0"],"main":function(co
         return undefined
     };
 
-  return "<script src=\"create.js\" defer></script>\r\n\r\n<h1>Title</h1>\r\n<hr>\r\n"
+  return "<script src=\"create.js\" defer></script>\n\n<h1 class=\"logs-title\">New Logs</h1>\n\n"
     + ((stack1 = container.invokePartial(lookupProperty(partials,"defaultCreate"),depth0,{"name":"defaultCreate","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "<input class=\"log-submit\" id=\"btn-submit\" type=\"button\" value=\"Submit\"></input>\r\n";
+    + "\n<input class=\"log-submit\" id=\"btn-submit\" type=\"button\" value=\"Submit\"></input>\n\n\n";
 },"usePartial":true,"useData":true});
 })();
