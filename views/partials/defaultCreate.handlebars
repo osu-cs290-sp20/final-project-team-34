@@ -5,73 +5,79 @@
     <h1 class="logs-title" id="log-number">Log {{logNumber}}</h1>
 
     <div class="form-row"> 
-      <input class="log-field" type="text" placeholder="Enter handlers name here" required="required">
-      <span  class="text" name="" required="required">Handler</span>
+      <input class="log-field" type="text" placeholder="Enter handlers name here" required="required"></input>
+      <span  class="text" name="handler" required="required">Handler</span>
       <span class="line"></span>
+    </div>
 
-      <input class="log-field" type="text" placeholder="Enter Dogs name here" required="required">
-      <span  class="text" name="" required="required">Dog</span>
+    <div class="form-row"> 
+      <input class="log-field" type="text" placeholder="Enter Dogs name here" required="required"></input>
+      <span  class="text" name="dog" required="required">Dog</span>
       <span class="line"></span>
     </div> 
     
     <div class="form-column"> 
       <input class="log-field" type="text" placeholder="Enter Date here" required="required">
-      <span  class="text" name="" required="required">Date</span>
+      <span  class="text" name="date" required="required">Date</span>
       <span class="line"></span>
     </div>
 
     <div class="form-column"> 
       <input class="log-field" type="text" placeholder="Enter Phase of Day here" required="required">
-      <span  class="text" name="" required="required">Phase of Day</span>
+      <span  class="text" name="phase" required="required">Phase of Day</span>
       <span class="line"></span>
     </div>
 
     <div class="form-column"> 
       <input class="log-field" type="text" placeholder="Enter Duration here" required="required">
-      <span  class="text" name="" required="required">Duration</span>
+      <span  class="text" name="duration" required="required">Duration</span>
       <span class="line"></span>
     </div>
 
-     <div class="form-row"> 
+    <div class="form-row"> 
       <input class="log-field" type="text" placeholder="Enter weather here" required="required">
-      <span  class="text" name="" required="required">Weather</span>
+      <span  class="text" name="weather" required="required">Weather</span>
       <span class="line"></span>
+    </div>
 
+    <div class="form-row"> 
       <input class="log-field" type="text" placeholder="Enter wind here" required="required">
-      <span  class="text" name="" required="required">Wind</span>
+      <span  class="text" name="wind" required="required">Wind</span>
       <span class="line"></span>
     </div> 
 
     <div class="form-row"> 
       <input class="log-field" type="text" placeholder="Enter problem type here" required="required">
-      <span  class="text" name="" required="required">Problem Type</span>
+      <span  class="text" name="problem" required="required">Problem Type</span>
       <span class="line"></span>
+    </div>
 
+    <div class="form-row"> 
       <input class="log-field" type="text" placeholder="Enter trail age here" required="required">
-      <span  class="text" name="" required="required">Trail Age</span>
+      <span  class="text" name="trail" required="required">Trail Age</span>
       <span class="line"></span>
     </div> 
 
-     <div class="form-column-textarea"> 
+    <div class="form-column-textarea"> 
       <textarea class="log-field" type="text" placeholder="Enter enviorment here" required="required"></textarea>
-      <span  class="text" name="" required="required">Enviorment</span>
+      <span  class="text" name="enviorment" required="required">Enviorment</span>
       <span class="line"></span>
     </div>
 
     <div class="form-column-textarea"> 
       <textarea class="log-field" type="text" placeholder="Enter performance analysis here" required="required"></textarea>
-      <span  class="text" name="" required="required">Performance Analysis</span>
+      <span  class="text" name="performance" required="required">Performance Analysis</span>
       <span class="line"></span>
     </div>
 
     <div class="form-column-textarea"> 
       <textarea class="log-field" type="text" placeholder="Enter goals for training here" required="required"></textarea>
-      <span  class="text" name="" required="required">Goals for Training</span>
+      <span  class="text" name="goals" required="required">Goals for Training</span>
       <span class="line"></span>
     </div>
 
     <div class="column-button">
-      <input type="submit" value="Send">
+      <input  type="submit" id="btn-submit" value="Send">
     </div>
      
     
@@ -93,6 +99,8 @@
     <p>Environment:<textarea class="log-field"></textarea></p>
     <p>Performance Analysis: <textarea class="log-field"></textarea></p>
     <p>Goals for Training: <textarea class="log-field" required="required"></textarea></p> --}}
+
+    
     </form>
   </div>
 </div>
