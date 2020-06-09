@@ -224,3 +224,182 @@ ul li a:hover .name span
     top: 90%;
     left: 42.5%;
 }
+
+.overallcontact
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+section
+{
+    position: relative;
+    padding-top: 15%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #112d42;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #03a9f4;
+}
+section .contact-container
+{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section .contact-container .address-block
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 25px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+    15px 15px 15px  rgba(0,0,0,0.05);
+}
+section .contact-container .address-block h2
+{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .contact-container .address-block .info
+{
+    position: relative;
+    margin: 20px 0;
+}
+section .contact-container .address-block .info li
+{
+    position: relative;
+    list-style: none;
+    
+    
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+section .contact-container .address-block .info li .address
+{
+    width: 30px;
+    min-width: 30px;
+}
+section .contact-container .address-block .info li iframe 
+{
+    min-width: 50%;
+}
+section .contact-container .address-block .info li:hover .address
+{
+    opacity: 1;
+}
+section .contact-container .form-block
+{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 250px;
+    padding-left: 250px;
+    padding-top: 100px;
+    height: 100%;
+    width: 60%;
+    border-radius: 25px;
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+    15px 15px 15px  rgba(0,0,0,0.05);
+}
+section .contact-container .form-block h2
+{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .contact-container .form-block .container
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .contact-container .form-block .container .input
+{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+section .contact-container .form-block .container .input .w50
+{
+    width: 47%;
+}
+section .contact-container .form-block .container .input .w100
+{
+    width: 100%;
+}
+section .contact-container .form-block .container .input input,
+section .contact-container .form-block .container .input textarea
+{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+section .contact-container .form-block .container .input textarea
+{
+    min-width: 120px;
+}
+section .contact-container .form-block .container .input span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transform: 0.5%;
+    pointer-events: none;
+}
+section .contact-container .form-block .container .input input:focus ~ span,
+section .contact-container .form-block .container .input textarea:focus ~ span,
+section .contact-container .form-block .container .input input:valid ~ span,
+section .contact-container .form-block .container .input textarea:valid ~ span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+section .contact-container .form-block .container .input input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #0f3958;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+section .contact-container .form-block .container .input input[type="submit"]:hover
+{
+    background: #ff568c;
+}
