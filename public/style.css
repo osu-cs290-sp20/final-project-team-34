@@ -239,7 +239,7 @@ section
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #112d42;
+    background: #8B4513;
 }
 section::before
 {
@@ -249,7 +249,7 @@ section::before
     left: 0;
     width: 50%;
     height: 100%;
-    background: #03a9f4;
+    background: #DEB887;
 }
 section .contact-container
 {
@@ -265,7 +265,7 @@ section .contact-container .address-block
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: #0f3959;
+    background: #8B4513;;
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -291,15 +291,22 @@ section .contact-container .address-block .info li
     position: relative;
     list-style: none;
     
-    
     margin: 20px 0;
     cursor: pointer;
     align-items: flex-start;
 }
+section .contact-container .address-block .info li h3
+{
+    color: #C0C0C0;
+    font-weight: 500;
+}
 section .contact-container .address-block .info li .address
 {
+    color: #C0C0C0;
     width: 30px;
     min-width: 30px;
+    font-size: 15px;
+    font-weight: 500;
 }
 section .contact-container .address-block .info li iframe 
 {
@@ -317,15 +324,15 @@ section .contact-container .form-block
     margin-left: 250px;
     padding-left: 250px;
     padding-top: 100px;
-    height: 100%;
-    width: 60%;
+    height: 90%;
+    width: 50%;
     border-radius: 25px;
     box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
     15px 15px 15px  rgba(0,0,0,0.05);
 }
 section .contact-container .form-block h2
 {
-    color: #0f3959;
+    color: #8B4513;
     font-size: 24px;
     font-weight: 500;
 }
@@ -342,11 +349,11 @@ section .contact-container .form-block .container .input
     position: relative;
     margin: 0 0 35px 0;
 }
-section .contact-container .form-block .container .input .w50
+section .contact-container .form-block .container .input.w50
 {
     width: 47%;
 }
-section .contact-container .form-block .container .input .w100
+section .contact-container .form-block .container .input.w100
 {
     width: 100%;
 }
@@ -393,7 +400,7 @@ section .contact-container .form-block .container .input input[type="submit"]
 {
     position: relative;
     cursor: pointer;
-    background: #0f3958;
+    background: #8B4513;
     color: #fff;
     border: none;
     max-width: 150px;
