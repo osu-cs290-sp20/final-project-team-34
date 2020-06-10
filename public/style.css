@@ -32,28 +32,28 @@ body
 .logo-text span 
 {
     margin: 0 15px;
-align-items: center;
-color: #000;
-font-size: 14px;
+    align-items: center;
+    color: #000;
+    font-size: 14px;
 }
 .logs-title{
-    /* padding-top: 10px; */
+   
     text-align: center;
 }
 .log-form-container
 {
-   display:flex;
+   /* display:flex;
    justify-content: center;
-   align-items: center;
+   align-items: center; */
 
 
 
 } 
 .log-form-box
 {   margin: 25px 20%;
-    /* padding-left: 20px; */
+    
     border-radius: 25px;
-    display: flex;
+    
     background: #f0f0f0;
 
     /*This is the first shadowing tecnique */
@@ -72,8 +72,7 @@ font-size: 14px;
     margin: 0px 30px 20px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    
 
 }
 .column-button
@@ -88,16 +87,17 @@ font-size: 14px;
 {
     padding: 0 10px;
     margin: 30px 0 10px;
+    position: relative;
+    width: 100%;
+    height: 100px;
 }
 .form-row
 {
     padding: 0 10px;
     margin: 30px 0 10px;
-}
-.form-column
-{
-    padding: 0 10px;
-    margin: 30px 0 10px;
+    position: relative;
+    width: 100%;
+    height: 25px;
 }
 .text 
 {
@@ -105,13 +105,75 @@ font-size: 14px;
     width: 100%;
     height: 40px;
     color: brown;
+    font-size: 18px;
 }
-.text input
+.form-row input,
+.form-column-textarea textarea
 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     
+    position: absolute;
+    width: 90%;
+    background: transparent;
+    /* box-shadow: none; */
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    
+}
+
+
+
+.form-row input:focus + .text,
+.form-row input:valid + .text
+{
+    top: -25px;
+    left: -10px;
+}
+.log-form .form-row .line, 
+.log-form .form-column-textarea .line 
+{
+    
+    display: block;
+    width: 90%;
+    height: 2px;
+    background: #000000;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+.form-row input:focus ~ .line,
+.form-row input:valid ~ .line
+{
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+    15px 15px 15px  rgba(0,0,0,0),
+    inset 4px 4px 5px rgba(255,255,255,0.8),
+    inset -4px -4px 5px rgba(0,0,0,0.05),
+    0 50px 40px rgba(0,0,0,0.05);
+}
+.form-column-textarea textarea
+{
+    height: 100%;
+    resize: none;
+
+
+}
+
+.form-column-textarea textarea:focus + .text,
+.form-column-textarea textarea:valid + .text
+{
+    top: -25px;
+    left: -10px;
+}
+.form-column-textarea textarea:focus ~ .line,
+.form-column-textarea textarea:valid ~ .line
+{
+    box-shadow: -15px -15px 15px rgba(255,255,255,0.5),
+    15px 15px 15px  rgba(0,0,0,0),
+    inset 4px 4px 5px rgba(255,255,255,0.8),
+    inset -4px -4px 5px rgba(0,0,0,0.05),
+    0 50px 40px rgba(0,0,0,0.05);
 }
 .log-form h1 
 {
@@ -119,13 +181,13 @@ font-size: 14px;
     text-align: center;
 }
 
-.log-field
+/* .log-field
 {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
+} */
 div .log-field
 {
     display: inline-block;
@@ -137,6 +199,7 @@ div .log-field
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .log
 {
