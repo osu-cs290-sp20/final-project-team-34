@@ -507,6 +507,7 @@ div .log-field
 {
     margin: 20px 10%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .member-card
