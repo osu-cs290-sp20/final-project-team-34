@@ -2,14 +2,24 @@ var logContainer = document.getElementById("log-container");
 var logNumber = document.getElementById("log-number");
 var fields = document.getElementsByClassName("log-field");
 var submit = document.getElementById("btn-submit");
+var title = document.getElementById("new-log-title");
 
 submit.addEventListener("click", function() {
-  console.log(getFieldValues(fields));
-  console.log(getFieldNames(fields));
+  var empty = false;
+  for(var i=0; i < fields.length; i++) {
+    if(fields[i].value.length == 0) {
+      console.log("empty");
+      empty = true;
+    }
+  }
 
-  var json = getLogJSON(fields);
-  submit.insertAdjacentHTML('afterEnd', Handlebars.templates.default(json));
-  addToDB(json);
+  if(!empty) {
+    var json = getLogJSON(fields);
+    submit.insertAdjacentHTML('afterEnd', Handlebars.templates.default(json));
+    addToDB(json);
+  } else {
+    title.textContent = "New Logs - Please Fill All Fields!"
+  }
 });
 
 function addToDB(logObject) {
