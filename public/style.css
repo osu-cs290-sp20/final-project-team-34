@@ -106,6 +106,7 @@ body
     height: 40px;
     color: brown;
     font-size: 18px;
+    z-index: 2;
 }
 .form-row input,
 .form-column-textarea textarea
@@ -134,11 +135,13 @@ body
 .log-form .form-row .line, 
 .log-form .form-column-textarea .line 
 {
-    
+    position: absolute;
+    top:-5px;
+    z-index: 1;
     display: block;
     width: 90%;
-    height: 2px;
-    background: #000000;
+    height: 30px;
+    /* background: #000000; */
     transition: 0.5s;
     border-radius: 2px;
     pointer-events: none;
@@ -151,6 +154,13 @@ body
     inset 4px 4px 5px rgba(255,255,255,0.8),
     inset -4px -4px 5px rgba(0,0,0,0.05),
     0 50px 40px rgba(0,0,0,0.05);
+}
+
+.form-row input:focus + .line,
+.form-row input:valid + .line
+{
+    top: -25px;
+    left: -10px;
 }
 .form-column-textarea textarea
 {
