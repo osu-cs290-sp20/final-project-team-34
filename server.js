@@ -38,14 +38,14 @@ app.post('/api/logs/add', function (req, res) {
   var obj = req.body;
   logObjects.push(obj);
 
-  /* Writing Logs To File
-  fs.writeFile('logs.json', logObjects, (err) => {
+  
+  fs.writeFile('logs.json', JSON.stringify(logObjects), (err) => {
     if(err) {
       console.log(err);
     }
     console.log("Post Successful!");
   })
-  */
+  
   res.send("Log Successful!");
 });
 
