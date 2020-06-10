@@ -46,8 +46,6 @@ body
    justify-content: center;
    align-items: center; */
 
-
-
 } 
 .log-form-box
 {   margin: 25px 20%;
@@ -123,19 +121,22 @@ input:focus::placeholder {
     outline: none;
     font-size: 18px;
     padding: 0 10px;
-    z-index: 1;
-    
+    z-index: 1; 
 }
-
-
-
 .form-row input:focus + .text,
 .form-row input:valid + .text
 {
     top: -25px;
     left: -10px;
 }
-.log-form .form-row .line, 
+.form-column-textarea textarea:focus + .text,
+.form-column-textarea textarea:valid + .text
+{
+    top: -25px;
+    left: -10px;
+}
+
+.log-form .form-row .line,
 .log-form .form-column-textarea .line 
 {
     position: absolute;
@@ -144,10 +145,13 @@ input:focus::placeholder {
     display: block;
     width: 90%;
     height: 30px;
-    /* background: #000000; */
     transition: 0.5s;
     border-radius: 2px;
     pointer-events: none;
+}
+.log-form .form-column-textarea .line 
+{
+    height: 100px;
 }
 .form-row input:focus ~ .line,
 .form-row input:valid ~ .line
@@ -165,19 +169,18 @@ input:focus::placeholder {
     top: -25px;
     left: -10px;
 }
+.form-column-textarea input:focus + .line,
+.form-column-textarea input:valid + .line
+{
+    top: -25px;
+    left: -10px;
+}
 .form-column-textarea textarea
 {
     height: 100%;
     resize: none;
 
 
-}
-
-.form-column-textarea textarea:focus + .text,
-.form-column-textarea textarea:valid + .text
-{
-    top: -25px;
-    left: -10px;
 }
 .form-column-textarea textarea:focus ~ .line,
 .form-column-textarea textarea:valid ~ .line
