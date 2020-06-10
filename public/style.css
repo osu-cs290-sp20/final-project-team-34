@@ -416,6 +416,7 @@ input:focus::placeholder {
     z-index: 2;
 }
 
+
 .log-form .form-row .line,
 .log-form .form-column-textarea .line
 {
