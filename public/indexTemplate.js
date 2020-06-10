@@ -8,7 +8,7 @@ templates['index'] = template({"compiler":[8,">= 4.3.0"],"main":function(contain
         return undefined
     };
 
-  return "\r\n<hr>\r\n"
+  return "\r\n\r\n"
     + ((stack1 = container.invokePartial(lookupProperty(partials,"homepage"),depth0,{"name":"homepage","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
 })();
