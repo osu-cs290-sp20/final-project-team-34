@@ -44,10 +44,20 @@ function getLogJSON(fields) {
 
   var log = "{\n";
   var log = log + '"logNumber":' + logNumber.textContent.split(" ")[1];
-  for (var i=0; i < fields.length; i++) {
+  for (var i=0; i < fields.length-3; i++) {
     log = log + ",\n"
     log = log + '"' + fieldNames[i] + '":"' + fieldValues[i] + '"';
   }
+
+  log = log + ",\n"
+  log = log + '"environment":"' + fieldValues[9] + '"';
+
+  log = log + ",\n"
+  log = log + '"performance":"' + fieldValues[10] + '"';
+
+  log = log + ",\n"
+  log = log + '"goals":"' + fieldValues[11] + '"';
+
   log = log + "\n}";
 
   var json = JSON.parse(log);
